@@ -1,0 +1,6 @@
+{
+  "Enabled": true,
+  "LogToConsole": true,
+  "LogToFile": true,
+  "LogLevel": "Info"
+}
