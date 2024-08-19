@@ -121,7 +121,10 @@ namespace SpotlightImageGrabber.Static
                 return false;
             }
 
-            File.AppendAllLines(logfile_path, log_lines);
+            if (LogToFile)
+            {
+				File.AppendAllLines(logfile_path, log_lines);
+			}
 
             if (LogToConsole)
             {

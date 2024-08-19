@@ -26,6 +26,12 @@ if (!Config.ReadConfigData(out message, out exception))
 	return;
 }
 
+if (!Config.ConfigData.Enabled)
+{
+	Log.Write(LogLevel.Info, $"Application disabled in config. Exiting.");
+	return;
+}
+
 statistics[PROGRESS_INIT_CONFIG] = 1;
 Log.LogToConsole = Config.ConfigData.LogToConsole;
 Log.LogToFile = Config.ConfigData.LogToFile;
