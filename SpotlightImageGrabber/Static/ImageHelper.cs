@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace SpotlightImageGrabber.Static
 {
-	public class ImageHelper
+    public class ImageHelper
     {
         /// <summary>
         /// Determine if a file is a known image type.

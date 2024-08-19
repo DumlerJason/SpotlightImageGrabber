@@ -2,7 +2,7 @@
 
 namespace SpotlightImageGrabber.Static
 {
-	public class MD5Helper
+    public class MD5Helper
     {
         public static string GetMd5Checksum(string filePath)
         {

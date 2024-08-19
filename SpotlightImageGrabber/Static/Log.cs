@@ -3,7 +3,7 @@ using static SpotlightImageGrabber.Constants;
 
 namespace SpotlightImageGrabber.Static
 {
-	public enum LogLevel
+    public enum LogLevel
     {
         All = -1,
         Trace = 0,
@@ -94,19 +94,19 @@ namespace SpotlightImageGrabber.Static
             return true;
         }
 
-		public static void SetLogLevel(string log_level)
-		{
-			if (!Enum.TryParse(typeof(LogLevel), log_level.Trim(), true, out object? log_level_object))
-			{
+        public static void SetLogLevel(string log_level)
+        {
+            if (!Enum.TryParse(typeof(LogLevel), log_level.Trim(), true, out object? log_level_object))
+            {
                 LogLevel = LogLevel.Info;
-			}
-			else
-			{
-				LogLevel = (LogLevel)log_level_object;
-			}
-		}
+            }
+            else
+            {
+                LogLevel = (LogLevel)log_level_object;
+            }
+        }
 
-		public static bool Write(LogLevel log_level, string log_message, out string message, out Exception? exception, [CallerFilePath] string caller_file_path = "", [CallerMemberName] string caller_member_name = "", [CallerLineNumber] int caller_line_number = 0)
+        public static bool Write(LogLevel log_level, string log_message, out string message, out Exception? exception, [CallerFilePath] string caller_file_path = "", [CallerMemberName] string caller_member_name = "", [CallerLineNumber] int caller_line_number = 0)
         {
             message = "";
             exception = null;
@@ -123,8 +123,8 @@ namespace SpotlightImageGrabber.Static
 
             if (LogToFile)
             {
-				File.AppendAllLines(logfile_path, log_lines);
-			}
+                File.AppendAllLines(logfile_path, log_lines);
+            }
 
             if (LogToConsole)
             {

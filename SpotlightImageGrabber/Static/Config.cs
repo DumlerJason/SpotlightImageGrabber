@@ -4,10 +4,10 @@ namespace SpotlightImageGrabber.Static
 {
 
 
-	/// <summary>
-	/// Read a local config file.
-	/// </summary>
-	public class Config
+    /// <summary>
+    /// Read a local config file.
+    /// </summary>
+    public class Config
     {
         public class ConfigDataSettings
         {

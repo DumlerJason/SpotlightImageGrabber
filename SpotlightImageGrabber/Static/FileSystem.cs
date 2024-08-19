@@ -3,7 +3,7 @@
 
 namespace SpotlightImageGrabber.Static
 {
-	public class FileSystem
+    public class FileSystem
     {
 
         /// <summary>
